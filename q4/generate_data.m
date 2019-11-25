@@ -1,0 +1,2 @@
+clear all;close all;clc;x1 = 0:0.5:10;x2 = 0:0.5:10;x3 = 0:0.5:10;y = zeros(1, size(x1)(2) * size(x2)(2) * size(x3)(2));matrix = [];for i = 1:size(x1)(2)  for j = 1:size(x2)(2)    for k = 1:size(x3)(2)      y((i-1) * length(x2) + (j-1) * length(x3) + k) = x1(1,i) + cos(x2(1,j)) + sin(x3(1,k)) + 0.2*rand(1,1);      matrix = [matrix; [x1(1,i), x2(1,j), x3(1,k), y((i-1) * length(x2) + (j-1) * length(x3) + k)]];    endfor  endforendfor
+csvwrite('data2.csv', matrix);
