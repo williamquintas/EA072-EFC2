@@ -1,0 +1,150 @@
+Geração 1: T_sub = 0.0395363 | T_acom = 0.472068 | Sobrs = 0.282312 | Margfase = 60.2374
+Geração 1: Os melhores valores encontrados foram: k_p = 18.943; k_d = 2.76095; k_i = 0.145448
+Geração 1: Fitness deste melhor indivíduo = 0.946666
+Geração 2: T_sub = 0.0365831 | T_acom = 0.448079 | Sobrs = 0.275958 | Margfase = 60.0568
+Geração 2: Os melhores valores encontrados foram: k_p = 17.165; k_d = 3.16599; k_i = 0.0108236
+Geração 2: Fitness deste melhor indivíduo = 0.996781
+Geração 3: T_sub = 0.0365825 | T_acom = 0.44808 | Sobrs = 0.275969 | Margfase = 60.0568
+Geração 3: Os melhores valores encontrados foram: k_p = 17.165; k_d = 3.16599; k_i = 0.00166789
+Geração 3: Fitness deste melhor indivíduo = 0.996784
+Geração 4: T_sub = 0.0365825 | T_acom = 0.44808 | Sobrs = 0.275969 | Margfase = 60.0568
+Geração 4: Os melhores valores encontrados foram: k_p = 17.165; k_d = 3.16599; k_i = 0.00166789
+Geração 4: Fitness deste melhor indivíduo = 0.996784
+Geração 5: T_sub = 0.0365825 | T_acom = 0.44808 | Sobrs = 0.275969 | Margfase = 60.0568
+Geração 5: Os melhores valores encontrados foram: k_p = 17.165; k_d = 3.16599; k_i = 0.00166789
+Geração 5: Fitness deste melhor indivíduo = 0.996784
+Geração 6: T_sub = 0.0365825 | T_acom = 0.44808 | Sobrs = 0.275969 | Margfase = 60.0568
+Geração 6: Os melhores valores encontrados foram: k_p = 17.165; k_d = 3.16599; k_i = 0.00166789
+Geração 6: Fitness deste melhor indivíduo = 0.996784
+Geração 7: T_sub = 0.0365825 | T_acom = 0.44808 | Sobrs = 0.275969 | Margfase = 60.0568
+Geração 7: Os melhores valores encontrados foram: k_p = 17.165; k_d = 3.16599; k_i = 0.00166789
+Geração 7: Fitness deste melhor indivíduo = 0.996784
+Geração 8: T_sub = 0.0371929 | T_acom = 0.454214 | Sobrs = 0.277223 | Margfase = 60.0312
+Geração 8: Os melhores valores encontrados foram: k_p = 17.7065; k_d = 3.07531; k_i = 0.117211
+Geração 8: Fitness deste melhor indivíduo = 0.999026
+Geração 9: T_sub = 0.0371929 | T_acom = 0.454214 | Sobrs = 0.277223 | Margfase = 60.0312
+Geração 9: Os melhores valores encontrados foram: k_p = 17.7065; k_d = 3.07531; k_i = 0.117211
+Geração 9: Fitness deste melhor indivíduo = 0.999026
+Geração 10: T_sub = 0.0371929 | T_acom = 0.454214 | Sobrs = 0.277223 | Margfase = 60.0312
+Geração 10: Os melhores valores encontrados foram: k_p = 17.7065; k_d = 3.07531; k_i = 0.117211
+Geração 10: Fitness deste melhor indivíduo = 0.999026
+Geração 11: T_sub = 0.0392965 | T_acom = 0.470617 | Sobrs = 0.280617 | Margfase = 60.0108
+Geração 11: Os melhores valores encontrados foram: k_p = 19.0074; k_d = 2.79605; k_i = 1.74624
+Geração 11: Fitness deste melhor indivíduo = 0.999884
+Geração 12: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 12: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 12: Fitness deste melhor indivíduo = 0.999894
+Geração 13: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 13: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 13: Fitness deste melhor indivíduo = 0.999894
+Geração 14: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 14: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 14: Fitness deste melhor indivíduo = 0.999894
+Geração 15: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 15: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 15: Fitness deste melhor indivíduo = 0.999894
+Geração 16: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 16: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 16: Fitness deste melhor indivíduo = 0.999894
+Geração 17: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 17: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 17: Fitness deste melhor indivíduo = 0.999894
+Geração 18: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 18: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 18: Fitness deste melhor indivíduo = 0.999894
+Geração 19: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 19: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 19: Fitness deste melhor indivíduo = 0.999894
+Geração 20: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 20: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 20: Fitness deste melhor indivíduo = 0.999894
+Geração 21: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 21: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 21: Fitness deste melhor indivíduo = 0.999894
+Geração 22: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 22: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 22: Fitness deste melhor indivíduo = 0.999894
+Geração 23: T_sub = 0.0350353 | T_acom = 0.432648 | Sobrs = 0.27111 | Margfase = 59.9897
+Geração 23: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 2.54893
+Geração 23: Fitness deste melhor indivíduo = 0.999894
+Geração 24: T_sub = 0.0350896 | T_acom = 0.432585 | Sobrs = 0.269948 | Margfase = 59.9924
+Geração 24: Os melhores valores encontrados foram: k_p = 15.5218; k_d = 3.42405; k_i = 3.42634
+Geração 24: Fitness deste melhor indivíduo = 0.999941
+Geração 25: T_sub = 0.0335194 | T_acom = 0.41403 | Sobrs = 0.272541 | Margfase = 60.0034
+Geração 25: Os melhores valores encontrados foram: k_p = 13.2026; k_d = 3.70495; k_i = 2.25182
+Geração 25: Fitness deste melhor indivíduo = 0.999989
+Geração 26: T_sub = 0.0335194 | T_acom = 0.41403 | Sobrs = 0.272541 | Margfase = 60.0034
+Geração 26: Os melhores valores encontrados foram: k_p = 13.2026; k_d = 3.70495; k_i = 2.25182
+Geração 26: Fitness deste melhor indivíduo = 0.999989
+Geração 27: T_sub = 0.0335196 | T_acom = 0.41403 | Sobrs = 0.272547 | Margfase = 60.0033
+Geração 27: Os melhores valores encontrados foram: k_p = 13.2026; k_d = 3.70495; k_i = 2.2477
+Geração 27: Fitness deste melhor indivíduo = 0.999989
+Geração 28: T_sub = 0.0335196 | T_acom = 0.41403 | Sobrs = 0.272547 | Margfase = 60.0033
+Geração 28: Os melhores valores encontrados foram: k_p = 13.2026; k_d = 3.70495; k_i = 2.2477
+Geração 28: Fitness deste melhor indivíduo = 0.999989
+Geração 29: T_sub = 0.0335196 | T_acom = 0.41403 | Sobrs = 0.272547 | Margfase = 60.0033
+Geração 29: Os melhores valores encontrados foram: k_p = 13.2026; k_d = 3.70495; k_i = 2.2477
+Geração 29: Fitness deste melhor indivíduo = 0.999989
+Geração 30: T_sub = 0.0335196 | T_acom = 0.41403 | Sobrs = 0.272547 | Margfase = 60.0033
+Geração 30: Os melhores valores encontrados foram: k_p = 13.2026; k_d = 3.70495; k_i = 2.2477
+Geração 30: Fitness deste melhor indivíduo = 0.999989
+Geração 31: T_sub = 0.0379137 | T_acom = 0.459711 | Sobrs = 0.275432 | Margfase = 60.0011
+Geração 31: Os melhores valores encontrados foram: k_p = 18.1581; k_d = 2.99505; k_i = 3.00894
+Geração 31: Fitness deste melhor indivíduo = 0.999999
+Geração 32: T_sub = 0.0379137 | T_acom = 0.459711 | Sobrs = 0.275432 | Margfase = 60.0011
+Geração 32: Os melhores valores encontrados foram: k_p = 18.1581; k_d = 2.99505; k_i = 3.00894
+Geração 32: Fitness deste melhor indivíduo = 0.999999
+Geração 33: T_sub = 0.0379137 | T_acom = 0.459711 | Sobrs = 0.275432 | Margfase = 60.0011
+Geração 33: Os melhores valores encontrados foram: k_p = 18.1581; k_d = 2.99505; k_i = 3.00894
+Geração 33: Fitness deste melhor indivíduo = 0.999999
+Geração 34: T_sub = 0.0379137 | T_acom = 0.459711 | Sobrs = 0.275432 | Margfase = 60.0011
+Geração 34: Os melhores valores encontrados foram: k_p = 18.1581; k_d = 2.99505; k_i = 3.00894
+Geração 34: Fitness deste melhor indivíduo = 0.999999
+Geração 35: T_sub = 0.0379137 | T_acom = 0.459711 | Sobrs = 0.275432 | Margfase = 60.0011
+Geração 35: Os melhores valores encontrados foram: k_p = 18.1581; k_d = 2.99505; k_i = 3.00894
+Geração 35: Fitness deste melhor indivíduo = 0.999999
+Geração 36: T_sub = 0.0368688 | T_acom = 0.444906 | Sobrs = 0.263976 | Margfase = 60.0004
+Geração 36: Os melhores valores encontrados foram: k_p = 16.987; k_d = 3.2102; k_i = 10.3525
+Geração 36: Fitness deste melhor indivíduo = 1
+Geração 37: T_sub = 0.0368688 | T_acom = 0.444906 | Sobrs = 0.263976 | Margfase = 60.0004
+Geração 37: Os melhores valores encontrados foram: k_p = 16.987; k_d = 3.2102; k_i = 10.3525
+Geração 37: Fitness deste melhor indivíduo = 1
+Geração 38: T_sub = 0.0368688 | T_acom = 0.444906 | Sobrs = 0.263976 | Margfase = 60.0004
+Geração 38: Os melhores valores encontrados foram: k_p = 16.987; k_d = 3.2102; k_i = 10.3525
+Geração 38: Fitness deste melhor indivíduo = 1
+Geração 39: T_sub = 0.0368688 | T_acom = 0.444906 | Sobrs = 0.263976 | Margfase = 60.0004
+Geração 39: Os melhores valores encontrados foram: k_p = 16.987; k_d = 3.2102; k_i = 10.3525
+Geração 39: Fitness deste melhor indivíduo = 1
+Geração 40: T_sub = 0.0368688 | T_acom = 0.444906 | Sobrs = 0.263976 | Margfase = 60.0004
+Geração 40: Os melhores valores encontrados foram: k_p = 16.987; k_d = 3.2102; k_i = 10.3525
+Geração 40: Fitness deste melhor indivíduo = 1
+Geração 41: T_sub = 0.0368688 | T_acom = 0.444906 | Sobrs = 0.263976 | Margfase = 60.0004
+Geração 41: Os melhores valores encontrados foram: k_p = 16.987; k_d = 3.2102; k_i = 10.3525
+Geração 41: Fitness deste melhor indivíduo = 1
+Geração 42: T_sub = 0.0354247 | T_acom = 0.432215 | Sobrs = 0.262867 | Margfase = 60.0002
+Geração 42: Os melhores valores encontrados foram: k_p = 15.5313; k_d = 3.42421; k_i = 9.1083
+Geração 42: Fitness deste melhor indivíduo = 1
+Geração 43: T_sub = 0.0354247 | T_acom = 0.432215 | Sobrs = 0.262867 | Margfase = 60.0002
+Geração 43: Os melhores valores encontrados foram: k_p = 15.5313; k_d = 3.42421; k_i = 9.1083
+Geração 43: Fitness deste melhor indivíduo = 1
+Geração 44: T_sub = 0.0354247 | T_acom = 0.432215 | Sobrs = 0.262867 | Margfase = 60.0002
+Geração 44: Os melhores valores encontrados foram: k_p = 15.5313; k_d = 3.42421; k_i = 9.1083
+Geração 44: Fitness deste melhor indivíduo = 1
+Geração 45: T_sub = 0.0354247 | T_acom = 0.432215 | Sobrs = 0.262867 | Margfase = 60.0002
+Geração 45: Os melhores valores encontrados foram: k_p = 15.5313; k_d = 3.42421; k_i = 9.1083
+Geração 45: Fitness deste melhor indivíduo = 1
+Geração 46: T_sub = 0.0372905 | T_acom = 0.4499 | Sobrs = 0.266868 | Margfase = 60.0002
+Geração 46: Os melhores valores encontrados foram: k_p = 17.437; k_d = 3.13375; k_i = 8.76821
+Geração 46: Fitness deste melhor indivíduo = 1
+Geração 47: T_sub = 0.0344491 | T_acom = 0.484031 | Sobrs = 0.263777 | Margfase = 60
+Geração 47: Os melhores valores encontrados foram: k_p = 14.406; k_d = 3.56764; k_i = 7.35196
+Geração 47: Fitness deste melhor indivíduo = 1
+Geração 48: T_sub = 0.0344491 | T_acom = 0.484031 | Sobrs = 0.263777 | Margfase = 60
+Geração 48: Os melhores valores encontrados foram: k_p = 14.406; k_d = 3.56764; k_i = 7.35196
+Geração 48: Fitness deste melhor indivíduo = 1
+Geração 49: T_sub = 0.0344491 | T_acom = 0.484031 | Sobrs = 0.263778 | Margfase = 60
+Geração 49: Os melhores valores encontrados foram: k_p = 14.406; k_d = 3.56764; k_i = 7.35191
+Geração 49: Fitness deste melhor indivíduo = 1
+Geração 50: T_sub = 0.0355331 | T_acom = 0.49307 | Sobrs = 0.259848 | Margfase = 60
+Geração 50: Os melhores valores encontrados foram: k_p = 15.5594; k_d = 3.42101; k_i = 10.3423
+Geração 50: Fitness deste melhor indivíduo = 1

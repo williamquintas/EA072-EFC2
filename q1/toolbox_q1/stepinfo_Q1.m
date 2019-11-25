@@ -67,8 +67,5 @@ yfinal;
 settling_time = ttail(settling_ind);
 
 S = struct('RiseTime', rise_time,'SettlingTime', settling_time,'SettlingMin', settling_min,'SettlingMax', settling_max,'Overshoot', overshoot,'Undershoot', undershoot,'Peak', abs(ypeak),'PeakTime', tpeak);
-rise_time
-settling_time
-overshoot
 
 end
