@@ -1,8 +1,8 @@
 %Toolbox - Mapa de Kohonen unidimensional aplicado ao problema do caixeiro viajante
-%Especificações:
-%   vizinhança - unidimensional em anel
-%   número de neurônios - controlado dinamicamente por mecanismos de poda e inserção
-%   inserção - 
+%Especificaï¿½ï¿½es:
+%   vizinhanï¿½a - unidimensional em anel
+%   nï¿½mero de neurï¿½nios - controlado dinamicamente por mecanismos de poda e inserï¿½ï¿½o
+%   inserï¿½ï¿½o - 
 %   poda - 
 
 clear; close all;
@@ -10,8 +10,8 @@ clear; close all;
 %carrega as coordenadas das cidades
 load dados.mat
 
-%seleciona a instância do caixeiro viajante
-choice = menu('Escolha a instância do caixeiro viajante','Berlin52','Inst. 1 (100 cidades) ','Inst. 2 (100 cidades)');
+%seleciona a instï¿½ncia do caixeiro viajante
+choice = menu('Escolha a instÃ¢ncia do caixeiro viajante','Berlin52','Inst. 1 (100 cidades) ','Inst. 2 (100 cidades)');
 if choice == 1
     load berlin52
 elseif choice == 2
@@ -20,47 +20,47 @@ else
     load dados.mat;
 end
 
-%parâmetros do SOM
+%parï¿½metros do SOM
 
-%número inicial de neurônios
+%nï¿½mero inicial de neurï¿½nios
 N = 10;
-%número máximo de épocas do processo de auto-organização
+%nï¿½mero mï¿½ximo de ï¿½pocas do processo de auto-organizaï¿½ï¿½o
 max_epoch = 500;
-%número de épocas para zerar contador de vitórias e realizar etapas de poda e inserção
+%nï¿½mero de ï¿½pocas para zerar contador de vitï¿½rias e realizar etapas de poda e inserï¿½ï¿½o
 PERIODO = 5;
-%limiar de proximidade do neurônio vencedor ao padrão
+%limiar de proximidade do neurï¿½nio vencedor ao padrï¿½o
 limiar = 0.01;
 %taxa de aprendizado inicial
 gama = 0.2;
-%limiar (valor mínimo permitido) da taxa de aprendizado
+%limiar (valor mï¿½nimo permitido) da taxa de aprendizado
 limite_taxa = 0.01;
-%raio (extensão) da vizinhança - no início, os vizinhos (esquerdo e direito) são afetados de forma mais intensa; conforme o número de épocas aumenta, não teremos mais o ajuste
+%raio (extensï¿½o) da vizinhanï¿½a - no inï¿½cio, os vizinhos (esquerdo e direito) sï¿½o afetados de forma mais intensa; conforme o nï¿½mero de ï¿½pocas aumenta, nï¿½o teremos mais o ajuste
 radius = 1;
 
-%mapa auto-organizável de Kohonen
+%mapa auto-organizï¿½vel de Kohonen
 [W,Index,Nf] = kohonen(X,N,gama,radius,limiar,limite_taxa,PERIODO,max_epoch);
 
-%exibição de resultados
+%exibiï¿½ï¿½o de resultados
 close(2); figure; plot_SOM(X,W,Nf);
 
 %determinamos o percurso a ser realizado
 
-%matriz com as distâncias entre cada neurônio e cidade
+%matriz com as distï¿½ncias entre cada neurï¿½nio e cidade
 mt = dist(W',X);
-%matriz com as distâncias entre as cidades
+%matriz com as distï¿½ncias entre as cidades
 mx = dist(X', X); 
 solucao = zeros(1,Nf); d = 0;
 %encontramos a primeira cidade
 [sem_uso,ind] = min(mt(1,:));
 solucao(1) = ind;
 for k=1:Nf-1
-    %ind corresponde ao índice da cidade representada pelo k-ésimo neurônio
+    %ind corresponde ao ï¿½ndice da cidade representada pelo k-ï¿½simo neurï¿½nio
     [sem_uso,ind] = min(mt(k+1,:));
     %montamos o percurso com a ordem das cidades
     solucao(k+1) = ind;
-    %distância entre as cidades é acumulada
+    %distï¿½ncia entre as cidades ï¿½ acumulada
     d = d + mx(solucao(k),solucao(k+1));
 end
-%incluímos também a distância entre a 1a e a última cidade
+%incluï¿½mos tambï¿½m a distï¿½ncia entre a 1a e a ï¿½ltima cidade
 d = d + mx(solucao(1),solucao(Nf));
-title(['Configuração final dos neurônios(o) - Percurso total: ' num2str(d)]);
+title(['ConfiguraÃ§Ã£o final dos neurÃ´nios(o) - Percurso total: ' num2str(d)]);

@@ -1,81 +1,81 @@
 %treinamento de um mapa de Kohonen - arranjo unidimensional - anel
-%mecanismos de poda e inserção automática de neurônios
-%matriz X - colunas representam os padrões de entrada(N atributos x M padrões)
+%mecanismos de poda e inserï¿½ï¿½o automï¿½tica de neurï¿½nios
+%matriz X - colunas representam os padrï¿½es de entrada(N atributos x M padrï¿½es)
 
 function [W,Index,neuronios] = kohonen(X,neuronios,gama_inicial,radius_inicial,LIMIAR,LIMITE_TAXA,PERIODO,MAX_ITERATION)
 
-%N = número de componentes e M = número de dados (padrões) de entrada
+%N = nï¿½mero de componentes e M = nï¿½mero de dados (padrï¿½es) de entrada
 [sem_uso,M] = size(X);
 
-%número de iterações
+%nï¿½mero de iteraï¿½ï¿½es
 iteration = 1;
 %taxa de aprendizado
 gama = gama_inicial; 
-%radius definirá a vizinhança - no início, ambos vizinhos são afetados
-%conforme o número de iterações aumenta, não teremos mais o ajuste
+%radius definirï¿½ a vizinhanï¿½a - no inï¿½cio, ambos vizinhos sï¿½o afetados
+%conforme o nï¿½mero de iteraï¿½ï¿½es aumenta, nï¿½o teremos mais o ajuste
 radius = radius_inicial;
 
-%matriz com o índice dos vizinhos topológicos - anel
+%matriz com o ï¿½ndice dos vizinhos topolï¿½gicos - anel
 vetor = (1:neuronios)';
 Index = [circshift(vetor,-1) circshift(vetor,1)];
-%vetor que contabiliza as vitórias dos neurônios
+%vetor que contabiliza as vitï¿½rias dos neurï¿½nios
 wins = zeros(1,neuronios);
 
-%inicialização da matriz de pesos
+%inicializaï¿½ï¿½o da matriz de pesos
 W = inicializa_pesos(X,neuronios);
-%exibe configuração inicial - pesos e dados
+%exibe configuraï¿½ï¿½o inicial - pesos e dados
 figure(1); plot_SOM(X,W,neuronios);
-title('Configuração inicial dos neurônios(o)');
+title('ConfiguraÃ§Ã£o inicial dos neurÃ´nios(o)');
 
-%contador do número de neurônios próximos aos padrões
+%contador do nï¿½mero de neurï¿½nios prï¿½ximos aos padrï¿½es
 cont = 0; 
 
-%critério de parada:
-%   número máximo de épocas
-%   contador do número de neurônios que se encontram muito próximos aos
-%   dados - ou seja, cuja dist. ao dado (cidade) mais próximo é inferior ao
+%critï¿½rio de parada:
+%   nï¿½mero mï¿½ximo de ï¿½pocas
+%   contador do nï¿½mero de neurï¿½nios que se encontram muito prï¿½ximos aos
+%   dados - ou seja, cuja dist. ao dado (cidade) mais prï¿½ximo ï¿½ inferior ao
 %   LIMIAR
-%   taxa de aprendizado maior que um valor mínimo permitido
+%   taxa de aprendizado maior que um valor mï¿½nimo permitido
 
 while iteration < MAX_ITERATION && cont < M && gama > LIMITE_TAXA
     
-    %a cada PERIODO iterações, zeramos o contador de vitórias
+    %a cada PERIODO iteraï¿½ï¿½es, zeramos o contador de vitï¿½rias
     if(mod(iteration,PERIODO)==0)
         wins = zeros(1,neuronios);
     end
     
-    %ordena aleatoriamente os padrões de entrada
+    %ordena aleatoriamente os padrï¿½es de entrada
     X = X(:,randperm(M));
-    %contador do número de neurônios próximos aos padrões
+    %contador do nï¿½mero de neurï¿½nios prï¿½ximos aos padrï¿½es
     cont = 0;
    
     %apresenta os M padroes
     for i=1:1:M
-        %determinamos o neurônio vencedor
+        %determinamos o neurï¿½nio vencedor
         [indice, value] = vencedor(X(:,i),W);
-        %contabiliza uma vitória para o neurônio "indice"
+        %contabiliza uma vitï¿½ria para o neurï¿½nio "indice"
         wins(indice) = wins(indice) + 1;
         if value < LIMIAR
-           %se todos os neurônios estão com proximidade menor que um LIMIAR
+           %se todos os neurï¿½nios estï¿½o com proximidade menor que um LIMIAR
            cont = cont + 1;
         end
-        %ajustamos os pesos do vencedor e dos neurônios vizinhos
+        %ajustamos os pesos do vencedor e dos neurï¿½nios vizinhos
         W = ajuste_peso(W, X, Index, indice, gama, i, radius);
     end
     
-    %ajusta a taxa de aprendizado gama e a vizinhança
+    %ajusta a taxa de aprendizado gama e a vizinhanï¿½a
     gama = gama_inicial*exp(-(iteration)/MAX_ITERATION);  %const de tempo
     radius = radius_inicial*exp(-(iteration)/MAX_ITERATION);
     
-    %a cada PERIODO iterações, fazemos as operações de poda e inserção de neurônios
+    %a cada PERIODO iteraï¿½ï¿½es, fazemos as operaï¿½ï¿½es de poda e inserï¿½ï¿½o de neurï¿½nios
     if(mod(iteration,PERIODO)==0)
-        %etapa de poda - neurônios que nunca vencem
+        %etapa de poda - neurï¿½nios que nunca vencem
         [W,wins,neuronios,Index] = poda(W,wins,neuronios,Index);
-        %etapa de inserção - próximo a neurônios que vencem muito
+        %etapa de inserï¿½ï¿½o - prï¿½ximo a neurï¿½nios que vencem muito
         [W,wins,neuronios,Index] = insere(W,wins,neuronios,Index);
     end
-    %exibição dos parâmetros
+    %exibiï¿½ï¿½o dos parï¿½metros
     fprintf('Iteracao:%d \t Taxa (Gama):%1.4f \t Raio:%d \t N:%d\n',iteration,gama,round(radius),neuronios);
-    figure(2); plot_SOM(X,W,neuronios); title(['Configuração dos neurônios - iteração ' num2str(iteration)]); drawnow;
+    figure(2); plot_SOM(X,W,neuronios); title(['ConfiguraÃ§Ã£o dos neurÃ´nios - iteraÃ§Ã£o ' num2str(iteration)]); drawnow;
     iteration = iteration + 1;
 end
